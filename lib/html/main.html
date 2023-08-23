@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Universal Saver</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/script2.js"></script>
+    <script src="../js/all-script.js"></script>
+  </head>
+  <body class="hide">
+    <div class="header">
+      <img src="../../assets/logo.png" alt="logo" class="logo"/>
+      
+        <a href="index.html" class="up_text header_font links hover">Начальная страница</a>
+      <span class="up_text header_font hover">
+        Случайный контент
+      </span>
+      <a href="about.html" class="up_text header_font links hover">О нас</a>
+      <div class="user_icon">
+        <span class="up_text">
+          <img src="../../assets/user.svg" id="profile" alt="user"/>
+        </span>
+        <div id="user_window" class="profile_popup hidden">
+          <span class="popup_text"> Мой профиль </span>
+          <span class="popup_text"> Подписка </span>
+          <span class="popup_text"> Вход </span>
+          <span class="popup_text"> Регистрация </span>
+        </div>
+      </div>
+    </div>
+    <div class="subtitle">
+      <img src="../../assets/subtitle.jpg" class="subtitle_img" alt="subtitle"/>
+    </div>
+    <div class="choice_color">
+      <button class="button_color color_pink " id="button_pink_img"></button>
+      <span class="content_text">Цвет картинок меняет,заебал</span>
+      <button class="button_color color_blue" id="button_blue_img"></button>
+    </div>
+    <div class="main_container">
+      <div class="left_container">
+        <div class="centre">
+          <img src="../../assets/burger.svg" class="burger_hidden" id="burger">
+          <!-- <div class="words_centre">  -->
+            
+              <div class="checked_skip ">
+                <span class="checked " > просмотренные </span>
+              <img src="../../assets/left.png" class="left_img" alt="left_img"/>
+              </div>
+              <div class="planed_skip " id="on_hover">
+                <span class="planed hover" id="on_hover"> запланированные </span>
+              <img src="../../assets/left.png" class="left_img" alt="left_img"/>
+              </div>
+              <div class="process_skip ">
+                <span class="process hover" id="on_hover"> в процессе </span>
+                <img src="../../assets/left.png" class="left_img" alt="left_img"/>
+              </div>
+          <!-- </div> -->
+          
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div class="mid_container">
+        <div class="colomn">
+          <div class="film">
+            <img src="../../assets/cinema.png" class="img_series" id="blue">
+            <!-- <img src="../../assets/cinema.png" class="img_series blue"> -->
+            <img src="../../assets/112.png" class="img_series" id="pink">
+            <!-- <img src="../../assets/112.png" class="img_series pink" > -->
+            <div class="content_case">
+              <h1 class="content_text">
+                Все просмотренные фильмы,вы можете сохранить и найти тут! 
+              </h1>
+              <button class="button case_button " id="button_film">
+                Сохранить
+              </button>
+              
+            </div>
+          </div>
+            <div class="modal_window hidden" id="window_film">
+              <div class="search">
+                <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+                <div class="button_search">
+                  <button class="button_window">Добавить</button>
+                  <input type="search" class='margin_search' id="site-search" name="q" />
+                  <!-- <button class="search_icon"> -->
+                    <img class="search_icon"src="../../assets/search.png">
+                  <!-- </button> -->
+                </div>
+              </div>
+              <div class="close"></div>
+              
+            </div>
+        <!-- //////////////////////// -->
+        <div class="content_block">
+          <img src="../../assets/series.png" class="img_series " id="blue">
+          <img src="../../assets/pink_series.png" class="img_series " id="pink">
+            <div class="content_case">
+              <h1 class="content_text">
+                Посмотрели сериал? Сохраните или найдите его тут! 
+              </h1>
+              <button class="button case_button" id="button_series">
+                Сохранить
+              </button>
+            </div>
+        </div>
+        <div class="modal_window hidden" id="window_series">
+          <div class="search">
+            <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+            <div class="button_search">
+              <button class="button_window">
+                Добавить
+              </button>
+              <div class="search_bar">
+                <input type="text" placeholder="search" color="white"class='margin_search' id="site-search" name="q" />
+              </div>
+              <button class="search_icon">
+                <img class="search_icon"src="../../assets/search.png">
+              </button>
+            </div>
+          </div>
+          <div class="close"></div>
+          
+        </div>
+        <!-- //////////////////////// -->
+        <div class="content_block">
+          <img src="../../assets/anime1.png" class="img_series">
+          <img src="../../assets/pink_anime.png" class="img_series">
+          <div class="content_case">
+            <h1 class="content_text">
+              Любители посмотреть аниме, сохраняйте просмотренное и ищите его здесь! 
+            </h1>
+            <button class="button case_button" id="button_anime">
+              Сохранить
+            </button>
+          </div>
+        </div>
+        <div class="modal_window hidden" id="window_anime">
+          <div class="search">
+            <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+            <div class="button_search">
+              <button class="button_window">Добавить</button>
+              <input type="search" class='margin_search' id="site-search" name="q" />
+              <!-- <button class="search_icon"> -->
+                <img class="search_icon"src="../../assets/search.png">
+              <!-- </button> -->
+            </div>
+          </div>
+          <div class="close"></div>
+          
+        </div>
+        <!-- //////////////////////// -->
+        <div class="content_block">
+          <img src="../../assets/mult.png" class="img_series">
+          <img src="../../assets/pink_mult.png" class="img_series">
+          <div class="content_case">
+            <h1 class="content_text">
+              Любители посмотреть аниме, сохраняйте просмотренное и ищите его здесь!
+            </h1>
+            <button class="button case_button" id="button_cartoon">
+              Сохранить
+            </button>
+          </div>
+        </div>
+        <div class="modal_window hidden" id="window_cartoon">
+          <div class="search">
+            <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+            <div class="button_search">
+              <button class="button_window">Добавить</button>
+              <input type="search" class='margin_search' id="site-search" name="q" />
+              <!-- <button class="search_icon"> -->
+                <img class="search_icon"src="../../assets/search.png">
+              <!-- </button> -->
+            </div>
+          </div>
+          <div class="close"></div>
+          
+        </div>
+        <!-- //////////////////////// -->
+        <div class="content_block">
+          <img src="../../assets/game.png" class="img_series">
+          <img src="../../assets/pink_game.png" class="img_series">
+          <div class="content_case">
+            <h1 class="content_text">
+              Посмотрели сериал? Сохраните или найдите его тут! 
+            </h1>
+            <button class="button case_button" id="button_game">
+              Сохранить
+            </button>
+          </div>
+        </div>
+        <div class="modal_window hidden" id="window_game">
+          <div class="search">
+            <label for="site-search" class="search_text margin_search">Сохранить можно тут!</label>
+            <div class="button_search">
+              <button class="button_window">Добавить</button>
+              <input type="search" class='margin_search' id="site-search" name="q" />
+              <!-- <button class="search_icon"> -->
+                <img class="search_icon"src="../../assets/search.png">
+              <!-- </button> -->
+            </div>
+          </div>
+          <div class="close"></div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right_container">
+
+    </div>
+  </body>
+</html>
