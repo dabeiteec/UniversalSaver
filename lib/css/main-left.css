@@ -1,0 +1,74 @@
+.left_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    height: 100%;
+    position: sticky;
+    left: 0;
+    color: aliceblue;
+    width: 300px;
+}
+.centre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-bottom: 170px;
+    padding: 10px;
+}
+#burger{
+    width: 50px ;
+    height: 50px;
+    margin-right: 25px; 
+}
+.checked {
+    position: relative;
+    cursor: pointer;
+    border-bottom: 2px white solid;
+}
+.checked:hover {
+    border-bottom: 2px white solid;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+.planed {
+    position: relative;
+    border-bottom: 2px transparent solid;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.planed:hover {
+    border-bottom: 2px white solid;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+.process {
+    position: relative;
+    border-bottom: 2px transparent solid;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.process:hover {
+    border-bottom: 2px white solid;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+.right_img {
+    position: relative;
+    opacity: 0;
+    z-index: 1;
+    /*  left: 500px; */
+    top: 8px; 
+}
+.planed:hover ~ .right_img {
+    opacity: 1;
+    transition: 0.2s;
+    
+}
+.checked:hover ~ .right_img {
+    opacity: 1;
+    transition: 0.2s;
+}
+.process:hover ~ .right_img {
+    opacity: 1;
+    transition: 0.2s;
+}
