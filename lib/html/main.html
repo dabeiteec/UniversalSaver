@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/main-left.css" />
+    <link rel="stylesheet" href="../css/main-content.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300;1,500&display=swap"
       rel="stylesheet"
     />
-    <script src="../js/script2.js"></script>
-    <script src="../js/all-script.js"></script>
+    <script src="../js/main-script.js"></script>
+    <script src="../js/main-onload.js"></script>
+    <script src="../js/header-script.js"></script>
   </head>
   <body class="hide">
     <div class="header">
       <img src="../../assets/logo.png" alt="logo" class="logo"/>
       
-        <a href="index.html" class="up_text header_font links hover">Начальная страница</a>
+        <a href="start.html" class="up_text header_font links hover">Начальная страница</a>
       <span class="up_text header_font hover">
         Случайный контент
       </span>
@@ -49,33 +52,28 @@
     <div class="main_container">
       <div class="left_container">
         <div class="centre">
-          <img src="../../assets/burger.svg" class="burger_hidden" id="burger">
-          <!-- <div class="words_centre">  -->
-            
-              <div class="checked_skip ">
-                <span class="checked " > просмотренные </span>
-              <img src="../../assets/left.png" class="left_img" alt="left_img"/>
-              </div>
-              <div class="planed_skip " id="on_hover">
-                <span class="planed hover" id="on_hover"> запланированные </span>
-              <img src="../../assets/left.png" class="left_img" alt="left_img"/>
-              </div>
-              <div class="process_skip ">
-                <span class="process hover" id="on_hover"> в процессе </span>
-                <img src="../../assets/left.png" class="left_img" alt="left_img"/>
-              </div>
-          <!-- </div> -->
-          
+          <img src="../../assets/burger.svg" class="burger_hidden">
+          <div class="checked_skip ">
+            <span class="checked " > просмотренные </span>
+            <img src="../../assets/right.png" class="right_img" alt="right_img"/>
+          </div>
+          <div class="planed_skip " >
+            <span class="planed hover" > запланированные </span>
+            <img src="../../assets/right.png" class="right_img" alt="right_img"/>
+          </div>
+            <div class="process_skip ">
+            <span class="process hover" > в процессе </span>
+            <img src="../../assets/right.png" class="right_img" alt="right_img"/>
+          </div>
         </div>
       </div>
-      <!--  -->
       <!--  -->
       <div class="mid_container">
         <div class="colomn">
           <div class="film">
-            <img src="../../assets/cinema.png" class="img_series" id="blue">
+            <img src="../../assets/blue_cinema.png" class="img_series" id="blue">
             <!-- <img src="../../assets/cinema.png" class="img_series blue"> -->
-            <img src="../../assets/112.png" class="img_series" id="pink">
+            <img src="../../assets/pink_cinema.png" class="img_series" id="pink">
             <!-- <img src="../../assets/112.png" class="img_series pink" > -->
             <div class="content_case">
               <h1 class="content_text">
@@ -103,7 +101,7 @@
             </div>
         <!-- //////////////////////// -->
         <div class="content_block">
-          <img src="../../assets/series.png" class="img_series " id="blue">
+          <img src="../../assets/blue_series.png" class="img_series " id="blue">
           <img src="../../assets/pink_series.png" class="img_series " id="pink">
             <div class="content_case">
               <h1 class="content_text">
@@ -134,7 +132,7 @@
         </div>
         <!-- //////////////////////// -->
         <div class="content_block">
-          <img src="../../assets/anime1.png" class="img_series">
+          <img src="../../assets/blue_anime.png" class="img_series">
           <img src="../../assets/pink_anime.png" class="img_series">
           <div class="content_case">
             <h1 class="content_text">
@@ -161,7 +159,7 @@
         </div>
         <!-- //////////////////////// -->
         <div class="content_block">
-          <img src="../../assets/mult.png" class="img_series">
+          <img src="../../assets/blue_mult.png" class="img_series">
           <img src="../../assets/pink_mult.png" class="img_series">
           <div class="content_case">
             <h1 class="content_text">
@@ -188,7 +186,7 @@
         </div>
         <!-- //////////////////////// -->
         <div class="content_block">
-          <img src="../../assets/game.png" class="img_series">
+          <img src="../../assets/blue_game.png" class="img_series">
           <img src="../../assets/pink_game.png" class="img_series">
           <div class="content_case">
             <h1 class="content_text">
